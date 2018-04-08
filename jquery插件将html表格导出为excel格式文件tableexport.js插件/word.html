@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<a class="word-export" href="javascript:void(0)"> 导出word</a>
+		<div id="page-content">
+	
+			 	<table id="Population-list-1" width="100%" border="1" cellspacing="0" cellpadding="0">
+                                   
+                                <thead>
+                                <tr>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>班级</th>
+                                    <th>成绩</th>
+                                    <th>排名</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>郭</td>
+                                    <td> 男</td>
+                                    <td>0329班</td>
+                                    <td>100</td>
+                                    <td>第一名</td>
+                                </tr>
+                                <tr>
+                                    <td>党</td>
+                                    <td>女</td>
+                                    <td>22班</td>
+                                    <td>yellow</td>
+                                    <td>bbbbbb</td>
+                                </tr>
+				
+                                <tbody>
+                            </table>
+                       <img src="img/t01fba4c0b99478dd87.jpg"/>     
+		</div>
+	</body>
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="src/v1/v1.0/js/FileSaver.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/tableexport.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/000.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	
+		        jQuery(document).ready(function($) {
+			        $("a.word-export").click(function(event) {
+			         
+			       $("#page-content").wordExport("导出文件的名称");
+			        });
+			    });
+	</script>
+</html>
